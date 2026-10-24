@@ -1,0 +1,7 @@
+$kind: http-request
+name: "Admin: list questions"
+url: "{{baseUrl}}/admin/manage_content.php?entity=question"
+method: GET
+queryParams:
+  entity: question
+order: 2000

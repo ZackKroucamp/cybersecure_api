@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/scenarios.php?type=phishing"
+method: GET
+queryParams:
+  type: phishing
+order: 1000

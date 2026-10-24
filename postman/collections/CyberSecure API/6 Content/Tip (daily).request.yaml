@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/tips.php?type=daily"
+method: GET
+queryParams:
+  type: daily
+order: 4000

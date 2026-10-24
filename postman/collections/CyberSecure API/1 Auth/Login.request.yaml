@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/auth/login.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "login": "teststudent",
+      "password": "MyTestPass#2026x"
+    }
+auth:
+  type: noauth
+scripts:
+  - type: afterResponse
+    code: |-
+      const res = pm.response.json();
+      if (res.success) pm.collectionVariables.set("token", res.data.token);
+    language: text/javascript
+order: 1000

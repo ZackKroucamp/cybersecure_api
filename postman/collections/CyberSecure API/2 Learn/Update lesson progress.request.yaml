@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/lesson_progress.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "lesson_id": 1,
+      "progress_percent": 100
+    }
+order: 5000

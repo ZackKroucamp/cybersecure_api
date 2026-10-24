@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/lesson.php?id=1"
+method: GET
+queryParams:
+  id: "1"
+order: 4000

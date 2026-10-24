@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/articles.php?category=resource"
+method: GET
+queryParams:
+  category: resource
+order: 2000

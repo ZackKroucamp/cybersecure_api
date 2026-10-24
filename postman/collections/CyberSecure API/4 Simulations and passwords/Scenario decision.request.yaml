@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/scenario_decision.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "scenario_id": 1,
+      "action": "avoid",
+      "response_time_ms": 3000
+    }
+order: 2000

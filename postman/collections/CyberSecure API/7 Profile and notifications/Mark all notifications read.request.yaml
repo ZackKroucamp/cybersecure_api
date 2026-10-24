@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/notification_read.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "all": true
+    }
+order: 4000

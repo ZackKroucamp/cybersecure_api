@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/articles.php?category=threat"
+method: GET
+queryParams:
+  category: threat
+order: 1000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/profile_update.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "display_name": "Test Name"
+    }
+order: 2000

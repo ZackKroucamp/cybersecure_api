@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/quiz_start.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "quiz_id": 1
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      const res = pm.response.json();
+      if (res.success) pm.collectionVariables.set("attempt_id", res.data.attempt_id);
+    language: text/javascript
+order: 3000

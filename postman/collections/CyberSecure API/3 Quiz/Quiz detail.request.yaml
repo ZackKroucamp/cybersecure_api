@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/quiz.php?id=1"
+method: GET
+queryParams:
+  id: "1"
+order: 2000

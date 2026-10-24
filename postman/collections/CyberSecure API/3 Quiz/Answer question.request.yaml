@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/quiz_answer.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "attempt_id": "{{attempt_id}}",
+      "question_id": 1,
+      "option_id": 3,
+      "response_time_ms": 4000
+    }
+order: 4000

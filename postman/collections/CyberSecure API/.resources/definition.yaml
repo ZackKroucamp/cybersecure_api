@@ -1,0 +1,12 @@
+$kind: collection
+description: ""
+variables:
+  baseUrl: http://localhost/cybersecure_api
+  token: ""
+  attempt_id: ""
+auth:
+  - id: 23c7678d-ed03-4438-be95-75b56bc990a2
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{token}}"

@@ -1,0 +1,31 @@
+$kind: http-request
+name: "Admin: create question"
+url: "{{baseUrl}}/admin/manage_content.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "entity": "question",
+      "action": "create",
+      "data": {
+        "topic_id": 1,
+        "question_text": "Which link is safest?",
+        "explanation": "Always check the domain.",
+        "options": [
+          {
+            "text": "paypa1.com/login"
+          },
+          {
+            "text": "paypal.com/login",
+            "is_correct": true
+          }
+        ],
+        "quiz_ids": [
+          1
+        ]
+      }
+    }
+order: 3000

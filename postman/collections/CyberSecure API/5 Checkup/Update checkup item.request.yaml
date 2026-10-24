@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/checkup_update.php"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "item_id": 1,
+      "status": "done"
+    }
+order: 2000
